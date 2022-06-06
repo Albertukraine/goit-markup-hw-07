@@ -1,0 +1,44 @@
+.benefits__icon {
+    width: 270px;
+    height: 120px;
+    background-color: var(--filter-btn-background-color);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  
+  .benefits__card {
+    width: 270px;
+    height: 101px;
+  }
+  
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .benefits__list .benefits__item {
+    margin-right: 30px;
+  }
+  .benefits__list .benefits__item:last-child {
+    margin-right: 0px;
+  }
+  .benefits__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .benefits__description {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--dark-grey);
+    margin: 0;
+  }
