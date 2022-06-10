@@ -3,7 +3,7 @@
     flex-wrap: wrap;
   }
   
-  .gallery__item {
+.gallery__item {
   
     position: relative;
     
@@ -21,10 +21,17 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
   }
-  
+
+  &:hover .overlay{
+    transform: translateY(0);
+  }
+  &:hover .overlay__description {
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
   }
   
- 
+  }
+
   .overlay {
   
     z-index: 1;
@@ -43,21 +50,22 @@
   
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__description {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.56;
+      letter-spacing: 0.03em;
+      color: var( --light-main-color);
+      margin: 0;
+    
+      opacity: 0;
+      
+    }
    
   }
-  .overlay__description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: var( --light-main-color);
-    margin: 0;
   
-    opacity: 0;
-    
-  
-  }
   
   .gallery__link {
   
@@ -67,57 +75,52 @@
   
   }
   
-  
-  
-  .gallery__item:hover .overlay{
-    transform: translateY(0);
-  }
-  
-  .gallery__item:hover .overlay__description {
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
-  }
-
   .filter {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  
-  
-  .card__wrapper {
-    position: relative;
+
+  .card{
+
+    &__wrapper {
+      position: relative;
+      
+      z-index: 2;
     
-    z-index: 2;
-  
-    background-color: var( --light-main-color);
-  
-    width: 370px;
-    height: 110px;
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    border-bottom: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
+      background-color: var( --light-main-color);
+    
+      width: 370px;
+      height: 110px;
+      padding-top: 20px;
+      padding-right: 24px;
+      padding-bottom: 20px;
+      padding-left: 24px;
+      border-bottom: 1px solid #eeeeee;
+      border-left: 1px solid #eeeeee;
+      border-right: 1px solid #eeeeee;
+    }
+
+    &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+    &__description {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.03em;
+      color: var(--dark-grey);
+      margin: 0;
+    }
+
   }
   
   
   
-  .card__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    margin-bottom: 4px;
-  }
-  .card__description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: var(--dark-grey);
-    margin: 0;
-  }
+  
+  

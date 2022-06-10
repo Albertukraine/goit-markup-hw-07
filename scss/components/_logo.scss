@@ -12,10 +12,15 @@
     margin-right: 93px;
     margin-bottom: 0;
     margin-left: 0;
+
+    &--black {
+      color: var( --logo-main-color);
+    }
+    &--white {
+      color: var( --light-main-color);
+    }
   }
-  .logo--black {
-    color: var( --logo-main-color);
-  }
+  
 
   .footer__logo {
     display: inline-block;
@@ -23,7 +28,5 @@
     margin-right: 60px;
   }
   
-  .logo--white {
-    color: var( --light-main-color);
-  }
+  
   
